@@ -1,0 +1,7 @@
+E:\Work\.NET Course - Beginners\Course\.net-course-beginngers\Course_1\Course_1.ConsoleApp\bin\Debug\Course_1.ConsoleApp.exe.config
+E:\Work\.NET Course - Beginners\Course\.net-course-beginngers\Course_1\Course_1.ConsoleApp\bin\Debug\Course_1.ConsoleApp.exe
+E:\Work\.NET Course - Beginners\Course\.net-course-beginngers\Course_1\Course_1.ConsoleApp\bin\Debug\Course_1.ConsoleApp.pdb
+E:\Work\.NET Course - Beginners\Course\.net-course-beginngers\Course_1\Course_1.ConsoleApp\obj\Debug\Course_1.ConsoleApp.csprojAssemblyReference.cache
+E:\Work\.NET Course - Beginners\Course\.net-course-beginngers\Course_1\Course_1.ConsoleApp\obj\Debug\Course_1.ConsoleApp.csproj.CoreCompileInputs.cache
+E:\Work\.NET Course - Beginners\Course\.net-course-beginngers\Course_1\Course_1.ConsoleApp\obj\Debug\Course_1.ConsoleApp.exe
+E:\Work\.NET Course - Beginners\Course\.net-course-beginngers\Course_1\Course_1.ConsoleApp\obj\Debug\Course_1.ConsoleApp.pdb
