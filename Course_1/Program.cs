@@ -34,23 +34,6 @@ namespace Course_1
             Console.WriteLine(messageToDisplay);
         }
 
-        static void WorkingWithStrings()
-        {
-            Console.WriteLine("Please enter your name:");
-            string userName = Console.ReadLine();
-
-            Console.WriteLine("Please eneter your age:");
-            string userAge = Console.ReadLine();
-
-            Console.WriteLine("Thank you for submitting this data! Below is what you entered:");
-
-            Console.WriteLine("Display data using option 1 -> Name: {0}, Age: {1}", userName, userAge);
-            Console.ReadKey();
-
-            Console.WriteLine($"Display data using option 2 -> Name: {userName}, Age: {userAge}");
-            Console.ReadKey();
-        }
-
         /// <summary>
         /// Understanding variables and how they are declared
         /// These variables will be only visible inside the method they are created
@@ -82,6 +65,10 @@ namespace Course_1
             string c2 = "c";
 
             Console.WriteLine("There is a difference between char and string");
+
+            Console.WriteLine(c1);
+            Console.WriteLine(c2);
+            Console.WriteLine("They are both converted to string when displayed on the console");
         }
 
         static void WorkingWithGlobalVariables()
