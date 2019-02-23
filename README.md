@@ -9,12 +9,16 @@
 	 d. Attributes
 	 e. Methods
 	 f. Brackets
-	 
+
+
  *2. Data types:*
 	 a. Representing data in C#
 	 b. Numeric operations
 	 c. String operations
-	 
+	
+
  *3. Working with the console:*
 	 a. Write to console
 	 b. Read from console
+	 
+
