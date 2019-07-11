@@ -11,11 +11,37 @@ namespace Course_1
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Console.WriteLine("Hello World!");
+
+            //Class1 class1 = new Class1();
+            //class1.ShowMessage();
+            //class1.ShowMessageWithParams("Afiseaza mesajul asta");
+
+            //string message = "Mesaj diferit";
+            //class1.ShowMessageWithParams(message);
+
+            Class2 class2 = new Class2();
+
+          
+
+            var a = Console.ReadLine();
+            int x = Convert.ToInt32(a);
+
+            var b = Console.ReadLine();
+            int y = Convert.ToInt32(b);
+
+            var c = Console.ReadLine();
+            int z = Convert.ToInt32(c);
+
+            class2.Sum(x,y,z);
+
+            Console.WriteLine();
 
             Console.ReadKey();
         }
-
+        /*
+        2metode, 1-acceota param string-afisare
+            2-return suma a 3 nr */
         /// <summary>
         /// This is a method in C#
         /// </summary>
@@ -80,5 +106,33 @@ namespace Course_1
 
             Console.WriteLine($"The following message is default one: {globalMessage}");
         }
+    }
+
+public class Class1
+{
+    public void ShowMessage()
+    {
+
+        Console.WriteLine("Hello from Class1");
+    }
+    public void ShowMessageWithParams(string valueToDisplay)
+    {
+        Console.WriteLine("Custom message to display: ");
+        Console.WriteLine(valueToDisplay);
+    }
+}
+
+  public  class Class2
+    {
+         public int Sum(int a, int b,int c)
+
+          {
+            int sum = a + b + c;
+           
+           
+            Console.WriteLine($"The sum of a,b an c is equal with: {sum}");
+            return sum;
+          }
+        
     }
 }
