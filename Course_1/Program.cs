@@ -13,6 +13,22 @@ namespace Course_1
         {
             Console.WriteLine("Hello World!");
 
+            int x = 19;
+            int y = 6;
+            Console.WriteLine($"Am {x} ani si locuiesc aici de {y} ani!");
+
+            var class1 = new Class1();
+            class1.ShowMessage();
+            class1.ShowMessageWithParams("Afiseaza mesajul asta!");
+
+            string message = "Mesaj diferit";
+            class1.ShowMessageWithParams(message);
+
+            string valueToDisplay = "Alt mesaj diferit";
+            class1.ShowMessageWithParams(valueToDisplay);
+
+            var sumValue = class1.Sum();
+
             Console.ReadKey();
         }
 
@@ -80,5 +96,35 @@ namespace Course_1
 
             Console.WriteLine($"The following message is default one: {globalMessage}");
         }
+    }
+
+    public class Class1
+    {
+        public void ShowMessage()
+        {
+            Console.WriteLine("Message from Class 1!");
+        }
+
+        public void ShowMessageWithParams(string valueToDisplay)
+        {
+            Console.WriteLine("Custom message to display:");
+            Console.WriteLine(valueToDisplay);
+        }
+
+        public int Sum()
+        {
+            int a = 1;
+            int b = 2;
+
+            int sum = a + b;
+
+            return sum;
+        }
+
+    }
+
+    class Class2
+    {
+
     }
 }

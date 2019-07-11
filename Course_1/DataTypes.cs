@@ -9,6 +9,8 @@ namespace Course_1
             int x1 = 2;
             int x2 = 4;
 
+            int suma = x1 + x2 * x1 / x2 + (x2 - x1) * (x1 - x2);
+
             Console.WriteLine($"Value of x1: {x1}, x2: {x2}");
             Console.ReadKey();
 
@@ -78,7 +80,7 @@ namespace Course_1
 
             Console.WriteLine("Thank you for submitting this data! Below is what you entered:");
 
-            Console.WriteLine("Display data using option 1 -> Name: {0}, Age: {1}", userName, userAge);
+            Console.WriteLine(string.Format("Display data using option 1 -> Name: {0}, Age: {1}", userName, userAge));
             Console.ReadKey();
 
             Console.WriteLine($"Display data using option 2 -> Name: {userName}, Age: {userAge}");
