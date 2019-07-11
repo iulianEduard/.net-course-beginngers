@@ -4,7 +4,9 @@ namespace Course_1
 {
     /// <summary>
     /// This is a class. It contains: attributes, properties and methods
-    /// </summary>
+    /// </summary> numele clasei trebuie sa fie dintr-un cuvint de fiecare data. Incepe cu majuscula de fiecare data. Accesorul e public sau privat. Daca in fata clasei nu exista accesor, inseamna ca clasa e by default private.
+    /// Dupa clasa, acolada deschisa si acolada inchisa
+    /// 
     class Program
     {
         static string globalMessage = "I am the root!";
@@ -12,6 +14,24 @@ namespace Course_1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            int x = 19;
+            int y = 6;
+            /// semnul $ 
+            Console.WriteLine($"Am {x} ani si locuiesc aici de {y} ani");
+
+
+            /// folosim asta de jos ca sa chemam metodele din alte clase in clasa curenta. 
+            Class1 class1 = new Class1();
+            class1.ShowMessage();
+            class1.ShowMessageWithParams("Afiseaza mesajul asta");
+
+            string message = "Mesaj diferit";
+            class1.ShowMessageWithParams(message);
+            /// putem folosi si var, dar nu e foarte precis de fiecare data
+            /// 
+           FirstClass class3=new FirstClass();
+            class3.Mane();
 
             Console.ReadKey();
         }
@@ -81,4 +101,86 @@ namespace Course_1
             Console.WriteLine($"The following message is default one: {globalMessage}");
         }
     }
+
+
+    public class FirstClass
+    {
+
+        public void Mane()
+        {
+            Console.WriteLine("Nu am umbrela");
+            Console.ReadKey();
+        }
+
+        public void Mane2()
+        {
+            int x, y, z;
+            Console.WriteLine("Enter first number:");
+            string FirstString=Console.ReadLine();
+
+            x = Convert.ToInt32(FirstString);
+
+            Console.WriteLine("Enter second number:");
+            string SecondString = Console.ReadLine();
+
+            y= Convert.ToInt32(SecondString);
+
+
+            Console.WriteLine("Enter third number:");
+            string ThirdString = Console.ReadLine();
+
+            z = Convert.ToInt32(ThirdString);
+
+            Console.WriteLine($"The sum of your numbers is: {x + y + z}");
+            Console.WriteLine(string.Format("The numbers you chose are {0}, {1} and {2}", x, y, z));
+            Console.ReadKey();
+            /// partea de return trebuie sa fie ultima in metoda
+            
+
+          
+       
+           
+      
+
+
+
+
+        }
+
+
+    }
+
+
+
+
+
 }
+
+    public class Class1
+{
+    public void ShowMessage()
+    {
+
+        Console.WriteLine("Message from Class1");
+    }
+
+
+    public void ShowMessageWithParams(string valueToDisplay)
+    {
+
+        Console.WriteLine("Custom message");
+        Console.WriteLine(valueToDisplay);
+
+
+    }
+
+
+
+
+}
+
+
+// Metoda are un antet, nume si parametri
+/// void inseamna ca nu returneaza nimic
+/// cw si tabx2
+/// 

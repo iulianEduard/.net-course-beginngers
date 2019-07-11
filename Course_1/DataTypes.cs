@@ -101,3 +101,4 @@ namespace Course_1
         }
     }
 }
+/// ctrl + mo si ctril + mp
