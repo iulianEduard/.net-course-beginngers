@@ -20,20 +20,34 @@ namespace Course_1
             //string message = "Mesaj diferit";
             //class1.ShowMessageWithParams(message);
 
-            Class2 class2 = new Class2();
+            //Find the sum of three numbers  
+            //Class2 class2 = new Class2();
 
-          
+            //var a = Console.ReadLine();
+            //int x = Convert.ToInt32(a);
 
-            var a = Console.ReadLine();
-            int x = Convert.ToInt32(a);
+            //var b = Console.ReadLine();
+            //int y = Convert.ToInt32(b);
 
-            var b = Console.ReadLine();
-            int y = Convert.ToInt32(b);
+            //var c = Console.ReadLine();
+            //int z = Convert.ToInt32(c);
 
-            var c = Console.ReadLine();
-            int z = Convert.ToInt32(c);
+            //class2.Sum(x,y,z);
 
-            class2.Sum(x,y,z);
+            //Console.WriteLine();
+
+            //Rularea metodelor din solutia prezenta in curs
+
+            DataTypes dataTypes = new DataTypes();
+            dataTypes.NumericOperations();
+
+            dataTypes.NumericOperationsFromKeyboard();
+
+            Console.WriteLine();
+
+            dataTypes.DoubleOperations();
+
+            dataTypes.StringOperations();
 
             Console.WriteLine();
 
