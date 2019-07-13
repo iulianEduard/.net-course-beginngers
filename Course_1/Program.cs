@@ -39,9 +39,7 @@ namespace Course_1
 
             Console.ReadKey();
         }
-        /*
-        2metode, 1-acceota param string-afisare
-            2-return suma a 3 nr */
+       
         /// <summary>
         /// This is a method in C#
         /// </summary>
