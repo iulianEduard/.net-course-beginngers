@@ -10,15 +10,30 @@ namespace Course_1
    
 
     class Program
+       
     {
         static string globalMessage = "I am the root!";
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string messageToDisplay = "Is it working";
+            WorkingWithMethodsAndParameters(messageToDisplay);
 
-            var Mesaj = new Mesaj();
-            Mesaj.Suma();
+            WorkingWithLocalVariables();
+            WorkingWithGlobalVariables();
+            WorkingWithMethods();
+            WorkingWithVariablesExtended();
+
+           TestClass invocation1 = new TestClass();
+            invocation1.ShowMessage();
+            invocation1.ShowMessageWithParams(messageToDisplay);
+
+            Mesaj newinvocation = new Mesaj();
+
+            newinvocation.Suma();
+
+
+          
          
         }
 
@@ -108,7 +123,7 @@ namespace Course_1
     }
 }/// 1 metoda care afiseaza pe ecran un mesaj
  /// metoda 2 care prezinta suma a 3 numere din consola
- /// 
+ /// sfg
 
 public class Mesaj
 {
@@ -118,21 +133,22 @@ public class Mesaj
         Console.WriteLine("Valar morghulis");
         Console.ReadLine();
     }
-
+   
     public void Suma()
+
     {
         int x, y, z;
 
         Console.WriteLine("Introduceti primul numar: ");
-        var number1= Console.ReadKey();
+        var number1 = Console.ReadLine();
         x = Convert.ToInt32(number1);
 
         Console.WriteLine("Introduceti al doilea numar: ");
-        var number2 = Console.ReadKey();
+        var number2 = Console.ReadLine();
         y = Convert.ToInt32(number2);
 
         Console.WriteLine("Introduceti al treilea numar: ");
-        var number3 = Console.ReadKey();
+        var number3 = Console.ReadLine();
         z = Convert.ToInt32(number3);
 
         Console.WriteLine(x+y+z);
